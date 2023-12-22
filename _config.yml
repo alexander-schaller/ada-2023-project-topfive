@@ -3,6 +3,5 @@ title: ADA Project Group TopFive
 description: The official submission of the TopFive Group
 show_downloads: True
 theme_color: white
-navigation:
-  - title: Home
-    url: /
+
+markdown: kramdown
