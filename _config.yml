@@ -1,7 +1,8 @@
-remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
+remote_theme: broccolini/swiss
 title: ADA Project Group TopFive
 description: The official submission of the TopFive Group
 show_downloads: True
+theme_color: white
 navigation:
   - title: Home
     url: /
