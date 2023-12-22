@@ -1,7 +1,7 @@
 remote_theme: broccolini/swiss
 title: ADA Project Group TopFive
 description: The official submission of the TopFive Group
-theme_color: white
+theme_color: yellow
 
 github_repo: ada-2023-project-topfive
 github_username: epfl-ada
