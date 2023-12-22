@@ -44,7 +44,7 @@ LOREM IPSUM
 ## Premiere Party: Timing is Everything, Darling! (ADD PLOTS)
 Choosing the right premiere date is like matchmaking for movies. We're exploring the release dates, their link to the success metrics namely movie ratings and box office revenue.
 
-{% include aggregate_avg_revenue_movie.png %}
+![Aggregate Avg Revenue Movie](_includes/aggregate_avg_revenue_movie.png)
 
 As we inspect the data spotlight  it revealed key insights. July, the summer blockbuster season, and November, anticipating the festive cheer, emerge as the peak months for box office success. On the flip side, January marks a post-holiday slump. The revenue rollercoaster showcases a substantial 3.7 times difference between peak and trough months, underscoring the pivotal role of premiere timing in determining box office triumph. 
 
@@ -53,7 +53,7 @@ The release calendar, shows September and December as the prime blockbuster batt
 ## Release Rumble: When Movies Go on Awkward First Dates (ADD PLOTS)
 Ever seen two movies awkwardly run into each other at the release calendar? We're investigating the impact of  colliding release dates. 
 
-<iframe src="_includes/aggregate_distribution_movies.png" width="750" height="550" frameborder="0">Aggregate Distribution of Movies</iframe>
+![Aggregate Dist. Movies](_includes/aggregate_distribution_movies.png)
 
 Putting on our audience engagement lens (number of votes), June and May steal the limelight, attracting the highest number of votes, while January and October fade into the background. This engagement of spectator translates into around double the interaction during peak months. In this release rumble, where movies collide for attention, the stakes are high, and the audience's verdict resonates. 
 
