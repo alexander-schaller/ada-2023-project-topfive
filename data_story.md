@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Data Story
+header: Navigating Through Genres
+subtitle: Uncovering the Key Factors Behind Box Office Revenue throughout Movie Categories
 permalink: /data-story/
 ---
 
