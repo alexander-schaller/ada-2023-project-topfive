@@ -1,9 +1,7 @@
-theme: jekyll-theme-minimal
+remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
 title: ADA Project Group TopFive
 description: The official submission of the TopFive Group
 show_downloads: True
 navigation:
   - title: Home
     url: /
-  - title: Example
-    url: example
