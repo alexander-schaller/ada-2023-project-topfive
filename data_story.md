@@ -15,7 +15,7 @@ And now...the plot thickens, and so does revenue ? – Let the data tell the tal
 
 ## Explain choice of Umbrella Genres, choice of 7 first ones etc (feature engineering etc)
 
-![Pie Chart]((https://github.com/alexander-schaller/ada-2023-project-topfive/blob/master/images/pie_chart.png?raw=true)
+![Pie Chart](https://github.com/alexander-schaller/ada-2023-project-topfive/blob/master/images/pie_chart.png?raw=true)
 
 # Box Office Alchemy: Decoding Causality Across Revenue Drivers
 Movies make money for various reasons. In this story, we'll show you how several drivers affect a movie's box office revenues. Think of it like solving a puzzle. In our pursuit of understanding the intricate factors that contribute to a movie's box office success, we primarily employ multiple regression. This choice is not arbitrary but a strategic necessity, rooted in the principles of sound statistical analysis.
