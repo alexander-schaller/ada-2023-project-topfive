@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 # Abstract
 From fast-paced action to heart-touching romances, each genre has its own recipe for success. With over 2,000 movies produced annually worldwide, what sets each genre apart in the race for box office glory? Let's explore the unique secrets behind the success of different movie genres! Dive into our data journey where numbers meet narratives, uncovering trends and patterns that define cinematic triumphs. Join us to uncover what really makes audiences flock to theaters and cash out!
 
