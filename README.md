@@ -44,7 +44,7 @@ LOREM IPSUM
 ## Premiere Party: Timing is Everything, Darling! (ADD PLOTS)
 Choosing the right premiere date is like matchmaking for movies. We're exploring the release dates, their link to the success metrics namely movie ratings and box office revenue.
 
-![Aggregate Avg Revenue Movie](_includes/aggregate_avg_revenue_movie.png)
+![Aggregate Avg Revenue Movie](images/aggregate_avg_revenue_movie.png)
 
 As we inspect the data spotlight  it revealed key insights. July, the summer blockbuster season, and November, anticipating the festive cheer, emerge as the peak months for box office success. On the flip side, January marks a post-holiday slump. The revenue rollercoaster showcases a substantial 3.7 times difference between peak and trough months, underscoring the pivotal role of premiere timing in determining box office triumph. 
 
@@ -53,7 +53,7 @@ The release calendar, shows September and December as the prime blockbuster batt
 ## Release Rumble: When Movies Go on Awkward First Dates (ADD PLOTS)
 Ever seen two movies awkwardly run into each other at the release calendar? We're investigating the impact of  colliding release dates. 
 
-![Aggregate Dist. Movies](_includes/aggregate_distribution_movies.png)
+![Aggregate Dist. Movies](images/aggregate_distribution_movies.png)
 
 Putting on our audience engagement lens (number of votes), June and May steal the limelight, attracting the highest number of votes, while January and October fade into the background. This engagement of spectator translates into around double the interaction during peak months. In this release rumble, where movies collide for attention, the stakes are high, and the audience's verdict resonates. 
 
@@ -68,11 +68,11 @@ In the context of the movie industry, our research aims to utilize unemployment 
 
 To explore our initial question, we delve into the nuanced impact of unemployment rates on box office revenues by utilizing regression analysis. The visual depiction provided by the accompanying two-dimensional causality graph elucidates no discernable relationship across all genres.
 
-<iframe src="_includes/unemployment_log_revenue_residual.html" width="750" height="550" frameborder="0">"Partialed out" regression of log(Inflation adjusted revenue) on Unemployment by Umbrella Genre</iframe>
+{% include unemployment_log_revenue_residual.html %}
 
 These uniformly non-significant results across all genres except for drama, which shows the only statistically significant marginally negative coefficient, suggest that the movie industry generally operates as a non-cyclical business. This implies that it consistently yields steady returns regardless of the prevailing economic conditions. Notably, the industry appears to be unaffected by variations in disposable income or leisure time, positioning it as a good that is rather inelastic to income shocks. 
 
-<iframe src="_includes/h2c_unemployment_log_revenue.html" width="750" height="550" frameborder="0">Joint plot with histograms, Unemployment vs logarithmic Revenue</iframe>
+{% include h2c_unemployment_log_revenue.html %}
 
 Now, we observe that revenue optimization typically occurs during periods of economic stability. This suggests that the relationship is not linear but rather intricate and multifaceted. By using a bivariate graph and modal analysis, we can illustrate various cross-genre trends. Specifically, we find that box office revenues peak during periods of full employment, typically when the US unemployment rate falls within the range of 4-6\%. As a result, the most profitable economic environment tends to coincide with a full-employment cycle. Additionally, there seems to be a second mode across the revenue variable as it is visible on the histogram. 
 
@@ -87,25 +87,25 @@ The Actor Momentum whispers tales of seasoned actors, adorned with the glow of e
 
 We start by exploring historical graphs describing tendencies in actor momentum across all categories.
 
-<iframe src="_includes/avg_movies_per_year.png" width="750" height="550" frameborder="0">Average movies per actor per year over all genres</iframe>
+![Avg. Movies Per Year](images/avg_movies_per_year.png)
 
-<iframe src="_includes/avg_momentum_per_year.png" width="750" height="550" frameborder="0">Average momentum per actor per year over all genres</iframe>
+![Avg. Momentu, Per Year](images/avg_momentum_per_year.png)
 
 In our inaugural expedition, where data and cinema converge, we cast our gaze upon the intersection of Actor Momentum and Box Office revenue. A visual symphony unfolds, revealing insights into the heartbeat of Hollywood's financial intricacies. Behold, the scatterplot — a canvas where Actor Momentum meets the towering (inflation-adjusted) revenues of our beloved films. The largest revenues seem to trace a skewed bell curve, gracefully peaking around 50 movies on average in the last 5 years. 
 
-<iframe src="_includes/scatter_popularity_revenue.html" width="750" height="550" frameborder="0"> Movie Revenue Scatterplot of average Actor Momentum vs Inflation adjusted revenue by Umbrella Genre</iframe>
+{% include scatter_popularity_revenue.html %}
 
 However, we can clearly notice that this scatterplot goes against Gauss-Markov assumptions for all our movie genres and thus, Actor Momentum should not be used as a regressor. However, we can still interpret the results for each genre visually.
 
 When taking a glimpse towards the correlation matrix above, we can notice that Actor Momentum and Inflation Adjusted Revenue have mostly very light correlation, culminating at 0.12, for Comedy. This seems to be in line with the scatterplots above, as Comedy, SF and Fantasy as well as Thriller genres have slightly more linear-looking relationships (or at least less flat ones) with the movie revenue.
 
-<iframe src="_includes/scatter_popularity_log_revenue.html" width="750" height="550" frameborder="0"> Movie Revenue Scatterplot of average Actor Momentum vs Inflation adjusted revenue by Umbrella Genre</iframe>
+{% include scatter_popularity_log_revenue.html %}
 
 As mentioned in the regression part, we then decided to choose the logarithm of Inflation Adjusted Revenue as our movie success metric in order to account for the scale differences and the outliers, while keeping an interpretable variable. When examining the scatterplot of the logarithmic revenue, it looks already better (w.r.t. linear regression), compared to the regular plot.
 
 When plotting the residual regression to visualize the tendency within the residuals, we do not learn anything new: the mean of the residuals remains constantly at 0.
 
-<iframe src="_includes/popularity_log_revenue_residual.html" width="750" height="550" frameborder="0">"Partialed out" regression of log(Inflation adjusted revenue) on Actor Momentum by Umbrella Genre</iframe>
+{% include popularity_log_revenue_residual.html %}
 
 However, no matter whether we work in the linear or the logarithmic space, the regression results remain quite similar. The coefficient of Actor Momentum always has p-values above 5\%, our significance level, no matter the genre. We can thus state that at that level, Actor Momentum is not a significant factor when predicting movie revenue, at least not in the context of a linear regression.
 
@@ -113,12 +113,13 @@ Even when plotting the residual regression between Actor Momentum and logarithmi
 
 The solution we committed to was grouping the movies by Actor Momentum for each genre, taking the mean for each group, then choosing the group with the maximal mean, in line with the tendency of the graphs of peaking at one point. In order to have a relevant grouping, we decided to round our momentums to the nearest multiple of 5, as this seemed graphically in line with the frequencies of observations.
 
-<iframe src="_includes/interactive_scatter_popularity_revenue.html" width="750" height="550" frameborder="0">Scatter plot of Actor Momentum vs Adjusted Revenue</iframe>
-<iframe src="_includes/interactive_scatter_popularity_count.html" width="750" height="550" frameborder="0">Scatter plot of Actor Momentum vs Movie Count</iframe>
+{% include interactive_scatter_popularity_revenue.html %}
+
+{% include interactive_scatter_popularity_count.html %}
 
 However, one should be careful, as momentum ranges with fewer movies are more affected by outliers. For this reason, we decided to multiply each average box office value by the amount of movies in each group, to have representative data with more robustness against outliers. The results can be seen below.
 
-<iframe src="_includes/interactive_scatter_popularity_BOxMC.html" width="750" height="550" frameborder="0">Scatter plot of Actor Momentum vs (Adjusted Revenue * Movie Count)</iframe>
+{% include interactive_scatter_popularity_BOxMC.html %}
 
 For the majority of genres, this golden equilibrium point materializes at the threshold of 55, where the seasoned veterans and the rising stars converge in a harmonious dance. Yet, the realms of SF and Fantasy stand out at 40 and the realm of Thriller resonates at 50, as the two only different categories.
 
@@ -136,7 +137,7 @@ Our analysis unfolded through scatter plots showing the relationship between res
 In all genres, a consistent pattern emerged - a faint yet discernible negative trend line. This subtle downward trend shows a weak inverse relationship between the presence of women on screen and the corresponding box office revenue for each genre.
 
 ### RESIDUAL REGRESSION
-<iframe src="_includes/gender_log_revenue_residual.html" width="750" height="550" frameborder="0">"Partialed out" regression of log(Inflation adjusted revenue) on Actor Momentum by Umbrella Genre</iframe>
+{% include gender_log_revenue_residual.html %}
 
 In light of the initially observed weak relationship, we conducted a second analysis. Specifically, we scrutinized the data by plotting a bar graph showcasing the average revenue across different female percentage intervals. To enhance the depiction of variability, we incorporated 95% confidence intervals (CI) as error bars within the graph.
 Upon closer inspection, this refined analysis showed us a more pronounced negative effect associated with varying female representation. Notably, the disparity in average revenue becomes strikingly evident across these intervals. For instance, in the 75-100 interval, the average revenue starkly contrasts, amounting to nearly a third of that in the 0-25 interval.
@@ -155,7 +156,7 @@ In 2002, there was a sudden dip in the representation of ethnicities across all 
 In our quest to explore the impact of the number of ethnicities on box office revenue, we employed the same linear regression method as we used in gender analysis. Visualizing the results through scatter plots of residualized revenue against residualized average number of ethnicities revealed a modest positive trend line. Notably, the trend exhibited its strongest correlation in action films, while appearing weaker in romantic, comedy, and drama genres.
 
 ### PLOT RESIDUALS ETH
-<iframe src="_includes/ethnicity_log_revenue_residual.html" width="750" height="550" frameborder="0">"Partialed out" regression of log(Inflation adjusted revenue) on Actor Momentum by Umbrella Genre</iframe>
+{% include ethnicity_log_revenue_residual.html %}
 
 To conclude, we can see that over all genres, the impact of having more ethnicities is positive and always significant. The largest impact is made on Romance and Thriller genres, while Drama movies seem to get the least benefits from a diverse cast.
 
@@ -168,31 +169,16 @@ Are you into short and sweet or epic odysseys? In this section we’ll take a lo
 
 Now, let's break it down. Movies these days are probably a bit longer because of the advancement in movie production technology. As we travel through the decades, the runtime has been going up by about 4.33 $\%$ every ten years.  
 
+![Blockbusters per Year](images/blockbusters_year.png)
 
-<iframe src="_includes/blockbusters_year.png" width="750" height="550" frameborder="0">Blockbusters and median revenue per year</iframe>
-
-<iframe src="_includes/short_movies_revenue.png" width="750" height="550" frameborder="0">Blockbusters and median revenue per year</iframe>
+![Short Movies Revenue](images/short_movies_revenue.png)
 
 Turns out Blockbusters (2 standard deviations above median earnings), in particular, are on average, about 15.76% longer than your average flick (and statistically different at a level of 5%!). But here's the kicker: short movies aren't necessarily making less money. Nope, some of those shorties are hitting blockbuster status. So, in the vast cinema landscape, it turns out the length of the film doesn't always rope in success. 
 
 Last but not least, let's have a look at the distribution between movie length density and logarithmic revenue.
 
-<iframe src="_includes/h2c_runtime_log_revenue.html" width="750" height="550" frameborder="0">Joint plot with histograms, Runtime vs logarithmic Revenue</iframe>
+{% include h2c_runtime_log_revenue.html %}
 
 ## Find catchy Languages Title @Max
 
 ### insert boxplots with CIs
-
-
-## Sample Plot
-<iframe src="_includes/scatter_popularity_log_revenue.html" width="750" height="550" frameborder="0"> Movie Revenue Scatterplot of average Actor Popularity vs log(Inflation adjusted revenue) by Umbrella Genre</iframe>
-
-## Actor Popularity and Movie Revenue
-
-Text
-
-
-
-## Last Test Graph (interactive)
-
-<iframe src="_includes/unemployment_log_revenue_residual.html" width="750" height="550" frameborder="0"> Movie Revenue Scatterplot of average Actor Popularity vs Inflation adjusted revenue by Umbrella Genre</iframe>
