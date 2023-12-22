@@ -35,7 +35,7 @@ If, for a specific observation, the regression coefficient exhibits a movement e
 LOREM IPSUM
 
 ### Insert both matrices, comment on fact that correlations are quite similar -> use box office (mostly?)
-<iframe src="plots/correlation_matrix_revenue.html" width="750" height="550" frameborder="0">Correlation Matrix for Adj Revenue by Umbrella Genre</iframe>
+{% include plots/correlation_matrix_revenue.html %}
 
 <iframe src="plots/correlation_matrix_rating.html" width="750" height="550" frameborder="0">Correlation Matrix for Average Review by Umbrella Genre</iframe>
 
