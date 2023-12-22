@@ -44,7 +44,7 @@ LOREM IPSUM
 ## Premiere Party: Timing is Everything, Darling! (ADD PLOTS)
 Choosing the right premiere date is like matchmaking for movies. We're exploring the release dates, their link to the success metrics namely movie ratings and box office revenue.
 
-![Aggregate Avg Revenue Movie](images/aggregate_avg_revenue_movie.png)
+![Aggregate Avg. Revenue Movie](https://github.com/alexander-schaller/ada-2023-project-topfive/blob/master/images/aggregate_avg_revenue_movie.png)
 
 As we inspect the data spotlight  it revealed key insights. July, the summer blockbuster season, and November, anticipating the festive cheer, emerge as the peak months for box office success. On the flip side, January marks a post-holiday slump. The revenue rollercoaster showcases a substantial 3.7 times difference between peak and trough months, underscoring the pivotal role of premiere timing in determining box office triumph. 
 
