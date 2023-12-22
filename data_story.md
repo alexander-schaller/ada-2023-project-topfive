@@ -90,7 +90,7 @@ These uniformly non-significant results across all genres except for drama, whic
 
 {% include h2c_unemployment_log_revenue.html %}
 
-Now, we observe that revenue optimization typically occurs during periods of economic stability. This suggests that the relationship is not linear but rather intricate and multifaceted. By using a bivariate graph and modal analysis, we can illustrate various cross-genre trends. Specifically, we find that box office revenues peak during periods of full employment, typically when the US unemployment rate falls within the range of 4-6\%. As a result, the most profitable economic environment tends to coincide with a full-employment cycle. Additionally, there seems to be a second mode across the revenue variable as it is visible on the histogram. 
+Now, we observe that revenue optimization typically occurs during periods of economic stability. This suggests that the relationship is not linear but rather intricate and multifaceted. By using a bivariate graph and modal analysis, we can illustrate various cross-genre trends. Specifically, we find that box office revenues peak during periods of full employment, typically when the US unemployment rate falls within the range of 4-6%. As a result, the most profitable economic environment tends to coincide with a full-employment cycle. Additionally, there seems to be a second mode across the revenue variable as it is visible on the histogram. 
 
 
 # Casting and Star Power
@@ -208,7 +208,7 @@ In a globalized film industry, the impact of language diversity on box office re
 
 As is customary in our storytelling journey, we are deeply interested in understanding the behavior and making comparisons across different movie genres. In contrast to many other questions we aim to answer through this data exploration, this particular inquiry reveals notable variations among various movie categories.
 
-To address this question, we employ a box plot analysis that showcases the means and their 95\% confidence intervals. This method offers a concise and visually intuitive framework for interpreting box office revenues concerning movies translated into a specific number of languages in addition to the original version (which is included in the count). A second, and more statistically rigorous measure is the 'partialled out' regression coefficient, which is equivalent to the corresponding coefficient of the multivariate regression of box office revenues on the languages variable across all genres. In all genres except 'romantic,' this coefficient is both statistically significant and positive. This finding provides a robust foundation for our upcoming, somewhat qualitative analysis.
+To address this question, we employ a box plot analysis that showcases the means and their 95% confidence intervals. This method offers a concise and visually intuitive framework for interpreting box office revenues concerning movies translated into a specific number of languages in addition to the original version (which is included in the count). A second, and more statistically rigorous measure is the 'partialled out' regression coefficient, which is equivalent to the corresponding coefficient of the multivariate regression of box office revenues on the languages variable across all genres. In all genres except 'romantic,' this coefficient is both statistically significant and positive. This finding provides a robust foundation for our upcoming, somewhat qualitative analysis.
 
 {% include boxplot_language_log_revenue.html %}
 
