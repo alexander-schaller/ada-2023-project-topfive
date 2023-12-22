@@ -47,7 +47,7 @@ Looking at the correlation matrices for different relationships and different ge
 ## Premiere Party: Timing is Everything, Darling!
 Choosing the right premiere date is like matchmaking for movies. We're exploring the release dates, their link to the success metrics namely movie ratings and box office revenue.
 
-![Aggregate Avg. Revenue Movie](https://github.com/alexander-schaller/ada-2023-project-topfive/blob/master/images/aggregate_avg_revenue_movie.png)
+![Aggregate Avg. Revenue Movie](https://github.com/alexander-schaller/ada-2023-project-topfive/blob/master/images/aggregate_avg_revenue_movie.png?raw=true)
 
 As we inspect the data spotlight  it revealed key insights. July, the summer blockbuster season, and November, anticipating the festive cheer, emerge as the peak months for box office success. On the flip side, January marks a post-holiday slump. The revenue rollercoaster showcases a substantial 3.7 times difference between peak and trough months, underscoring the pivotal role of premiere timing in determining box office triumph. 
 
@@ -56,7 +56,7 @@ The release calendar, shows September and December as the prime blockbuster batt
 ## Release Rumble: When Movies Go on Awkward First Dates
 Ever seen two movies awkwardly run into each other at the release calendar? We're investigating the impact of  colliding release dates. 
 
-![Aggregate Dist. Movies](https://github.com/alexander-schaller/ada-2023-project-topfive/blob/master/images/aggregate_distribution_movies.png)
+![Aggregate Dist. Movies](https://github.com/alexander-schaller/ada-2023-project-topfive/blob/master/images/aggregate_distribution_movies.png?raw=true)
 
 Putting on our audience engagement lens (number of votes), June and May steal the limelight, attracting the highest number of votes, while January and October fade into the background. This engagement of spectator translates into around double the interaction during peak months. In this release rumble, where movies collide for attention, the stakes are high, and the audience's verdict resonates. 
 
@@ -92,9 +92,9 @@ The Actor Momentum whispers tales of seasoned actors, adorned with the glow of e
 
 We start by exploring historical graphs describing tendencies in actor momentum across all categories.
 
-![Avg. Movies Per Year](https://github.com/alexander-schaller/ada-2023-project-topfive/blob/master/images/avg_movies_per_year.png)
+![Avg. Movies Per Year](https://github.com/alexander-schaller/ada-2023-project-topfive/blob/master/images/avg_movies_per_year.png?raw=true)
 
-![Avg. Momentu, Per Year](https://github.com/alexander-schaller/ada-2023-project-topfive/blob/master/images/avg_momentum_per_year.png)
+![Avg. Momentu, Per Year](https://github.com/alexander-schaller/ada-2023-project-topfive/blob/master/images/avg_momentum_per_year.png?raw=true)
 
 In our inaugural expedition, where data and cinema converge, we cast our gaze upon the intersection of Actor Momentum and Box Office revenue. A visual symphony unfolds, revealing insights into the heartbeat of Hollywood's financial intricacies. Behold, the scatterplot — a canvas where Actor Momentum meets the towering (inflation-adjusted) revenues of our beloved films. The largest revenues seem to trace a skewed bell curve, gracefully peaking around 50 movies on average in the last 5 years. 
 
@@ -174,9 +174,9 @@ Are you into short and sweet or epic odysseys? In this section we’ll take a lo
 Now, let's break it down. Movies these days are probably a bit longer because of the advancement in movie production technology. As we travel through the decades, the runtime has been going up by about 4.33% every ten years.  
 
 
-![Blockbusters per Year](https://github.com/alexander-schaller/ada-2023-project-topfive/blob/master/images/blockbusters_year.png)
+![Blockbusters per Year](https://github.com/alexander-schaller/ada-2023-project-topfive/blob/master/images/blockbusters_year.png?raw=true)
 
-![Short Movies Revenue](https://github.com/alexander-schaller/ada-2023-project-topfive/blob/master/images/short_movies_revenue.png)
+![Short Movies Revenue](https://github.com/alexander-schaller/ada-2023-project-topfive/blob/master/images/short_movies_revenue.png?raw=true)
 
 Turns out Blockbusters (2 standard deviations above median earnings), in particular, are on average, about 15.76% longer than your average flick (and statistically different at a level of 5%!). But here's the kicker: short movies aren't necessarily making less money. Nope, some of those shorties are hitting blockbuster status. So, in the vast cinema landscape, it turns out the length of the film doesn't always rope in success. 
 
